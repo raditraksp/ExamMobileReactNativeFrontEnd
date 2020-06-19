@@ -8,7 +8,7 @@ import {
    TouchableOpacity } from 'react-native'
 
 // Menerima dua property : navigation , addNewRoutine
-const AddItem = ({navigation, addNewRoutine}) => {
+const AddItem = ({addNewRoutine}) => {
 
    const [title, setTitle] = useState('')
    const [year, setYear] = useState('')
@@ -23,7 +23,7 @@ const AddItem = ({navigation, addNewRoutine}) => {
       setTitle('')
       setYear('')
    }
-
+   
    return (
       <View>
          {/* 'value' akan menentukan apa yang akan tampil di textinput */}

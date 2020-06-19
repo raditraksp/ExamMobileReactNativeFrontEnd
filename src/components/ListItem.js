@@ -9,9 +9,8 @@ const ListItem = ({film, deleteRoutine}) => {
    const onPressList = () => {
       // berpindah screen dengan membawa sebuah data (object)
       // data akan diakses di object route
-      navigation.navigate('Details', {film})
+      navigation.navigate('Details', {id: film.id})
    }
-
 
    return (
       <TouchableOpacity onPress={onPressList} style={styles.listItem} >
