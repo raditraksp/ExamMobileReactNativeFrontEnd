@@ -23,10 +23,7 @@ const Details = ({route, navigation}) => {
       }, [])
    )
 
-   const onEditFilm = () => {
-      navigation.navigate("EditFilm", {id: film.id})
-   }
-
+   
    return (
       <Container>
          <ScrollView>
@@ -52,7 +49,7 @@ const Details = ({route, navigation}) => {
             </View>
          </ScrollView>
          <View style={{height: 40, flexDirection: 'row', justifyContent: 'space-around'}} >
-            <Button block style={[btn, bg.purplesoft, {height: 25}]} onPress={onEditFilm} >
+            <Button block style={[btn, bg.purplesoft, {height: 25}]} onPress={() => navigation.navigate("EditFilm", {id: film.id})} >
                <Text>Edit Film</Text>
             </Button>
          </View>
