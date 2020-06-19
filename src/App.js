@@ -16,6 +16,7 @@ const Stack = createStackNavigator()
 // component
 import Home from './components/Home';
 import Details from './components/Details';
+import EditFilm from './components/EditFilm';
 
 const App = () => {
    return (
@@ -46,6 +47,7 @@ const App = () => {
          >
             <Stack.Screen name="Home" component={Home} />
             <Stack.Screen name="Details" component={Details} />
+            <Stack.Screen name="EditFilm" component={EditFilm} />
          </Stack.Navigator>
       </NavigationContainer>
    )
